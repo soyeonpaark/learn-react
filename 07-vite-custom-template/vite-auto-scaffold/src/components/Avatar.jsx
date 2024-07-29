@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // eslint-disable-next-line react/prop-types
 function Avatar({ name, photo, status = "offline", size = 64 }) {
   let iconPath = "";
@@ -20,6 +21,31 @@ function Avatar({ name, photo, status = "offline", size = 64 }) {
     case "away":
       iconPath = "/icons/status-away.svg";
       statusMessage = "자리비움";
+=======
+
+// eslint-disable-next-line react/prop-types
+function Avatar({ name, photo, status = 'offline', size = 64 }) {
+  let iconPath = '';
+  let statusMessage = '';
+
+  switch (status) {
+    default:
+    case 'offline':
+      iconPath = '/icons/status-offline.svg';
+      statusMessage = '오프라인';
+      break;
+    case 'online':
+      iconPath = '/icons/status-online.svg';
+      statusMessage = '온라인';
+      break;
+    case 'dont-disturb':
+      iconPath = '/icons/status-dont-disturb.svg';
+      statusMessage = '방해금지';
+      break;
+    case 'away':
+      iconPath = '/icons/status-away.svg';
+      statusMessage = '자리비움';
+>>>>>>> 76bea16fd502ed1bdf187379666c891a12997fc4
       break;
   }
 
@@ -35,4 +61,8 @@ function Avatar({ name, photo, status = "offline", size = 64 }) {
   );
 }
 
+<<<<<<< HEAD
 export default Avatar;
+=======
+export default Avatar;
+>>>>>>> 76bea16fd502ed1bdf187379666c891a12997fc4

@@ -1,6 +1,4 @@
-// Web Standards - .js, .css, .html 확장자 필요
-// Vite - .js, .jsx, .json, .ts, .tsx 자동으로 처리
-import Avatar from "../components/Avatar";
+import Avatar from '@/components/Avatar';
 
 function AvatarListPage() {
   return (
@@ -21,8 +19,4 @@ function AvatarListPage() {
   );
 }
 
-<<<<<<< HEAD
 export default AvatarListPage;
-=======
-export default AvatarListPage;
->>>>>>> 76bea16fd502ed1bdf187379666c891a12997fc4
