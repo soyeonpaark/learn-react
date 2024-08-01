@@ -1,7 +1,7 @@
-function RenderLists() {
+function RenderLists({ items }) {
   const renderList = () => {};
-
-  return (
+  // 리스트 렌더링 결과 반환
+  items.return(
     <>
       <dt>리스트 렌더링(list rendering)</dt>
       <dd>
